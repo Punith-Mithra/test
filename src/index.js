@@ -2,7 +2,7 @@ import _ from 'lodash';
 import style from './styles.css';
 import img from './images/1.jpg';
 
-function component() {
+const component = () => {
   const element = document.createElement('img');
 
   // Lodash, now imported by this script
@@ -10,6 +10,6 @@ function component() {
   element.style = { width: '100px' };
 
   return element;
-}
+};
 
 document.body.appendChild(component());
